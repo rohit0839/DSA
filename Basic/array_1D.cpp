@@ -13,16 +13,16 @@ int main()
 
   // array size
   cout<< sizeof(int[3]); // 12
-  cout<< 3*sizeof(int);  //12
+  cout<< 3*sizeof(int);  // 12
 
   // accessing
   int arr[5] = {8,3,4,0,2};
   cout<< arr[2];    // 4
   cout<< 2[arr];    // 4
   
-  cout<< arr;     //0x7ffd8dd41cd0
-  cout<< &arr;    //0x7ffd8dd41cd0
-  cout<< &arr[0]; //0x7ffd8dd41cd0
+  cout<< arr;       //0x7ffd8dd41cd0
+  cout<< &arr;      //0x7ffd8dd41cd0
+  cout<< &arr[0];   //0x7ffd8dd41cd0
 
   cout<< *arr;            // 8
   cout<< *(arr+2);        // 4
