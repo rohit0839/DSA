@@ -9,7 +9,7 @@ int main()
   int b[] = {4,5,6};    // 4 5 6
   int c[3] = {};        // 0 0 0
   int d[3] = {2};       // 2 0 0
-  int e[3] = {[2]=5};   // 0 0 5  //works only with clang
+  int e[3] = {[2]=5};   // 0 0 5  // works only with clang
 
   // array size
   cout<< sizeof(int[3]); // 12
@@ -20,14 +20,17 @@ int main()
   cout<< arr[2];    // 4
   cout<< 2[arr];    // 4
   
-  cout<< arr;       //0x7ffd8dd41cd0
-  cout<< &arr;      //0x7ffd8dd41cd0
-  cout<< &arr[0];   //0x7ffd8dd41cd0
+  cout<< arr;       // 0x7ffe6bc83730
+  cout<< &arr;      // 0x7ffe6bc83730
+  cout<< &arr[0];   // 0x7ffe6bc83730
+  cout<< &arr[0]+1  // 0x7ffe6bc83734
+  cout<< &arr+1;    // 0x7ffe6bc83744
 
   cout<< *arr;            // 8
   cout<< *(arr+2);        // 4
   cout<< *arr+2;          // 10
-  cout<< &(*(arr+1));     // 0x7ffd8dd41cd4
+  
+  cout<< &(*(arr+1));     // 0x7ffe6bc83734
   cout<< *(&(arr[1])+2);  // 0
 
   return 0;
