@@ -11,8 +11,9 @@ int main()
   x = y = 10;
   
   int l (1);             // direct initialization
-  auto m (1);
+  auto m = (1);
   
   int n {4};             // uniform initialization 
-  auto p {4};
+  int o {};
+  auto p = {4};
 }
