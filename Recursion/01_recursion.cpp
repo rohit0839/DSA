@@ -62,13 +62,13 @@ int nested_recursion(int f)
 int main() 
 {
   int x = 3;
-  tail_recursion(x);             // 3 2 1
+  tail_recursion(x);           // 3 2 1
   cout<<"\n";
-  head_recursion(x);            // 1 2 3
+  head_recursion(x);           // 1 2 3
   cout<<"\n";
   tree_recursion(x);           // 3 2 1 1 2 1 1
   cout<<"\n";
-  indirect_recursion(x);      // 3 2 1
+  indirect_recursion(x);       // 3 2 1
   cout<<"\n";
   cout<< nested_recursion(x);  // 6
   return 0;
