@@ -13,7 +13,7 @@ int  main()
   char *s6[] = {"rohit","ranjan"};
   char *s7[5] = {"rohit","ranjan"};
 
-  char s8[5][4] = {"abc","def","lmn","pqr","xyz"};        //char str[NUMBER_OF_STRINGS][STRING_LENGTH+1]
+  char s8[5][4] = {"abc","def","lmn","pqr","xyz"};        // char str[NUMBER_OF_STRINGS][STRING_LENGTH+1]
   char *s9[5][4] = {"abc","def","lmn","pqr","xyz"};
 
   printf("%s\n", s6[0]);              // rohit
@@ -27,7 +27,4 @@ int  main()
 
   return 0;
 }
-
-
-
 
