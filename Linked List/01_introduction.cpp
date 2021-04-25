@@ -14,15 +14,15 @@ int main()
   Node* head;
   head = NULL;
   
-  Node* n1 = new Node();
-  // Node* n1 = (Node*)malloc(sizeof(Node)); 
+  Node* temp = new Node();
+  // Node* temp = (Node*)malloc(sizeof(Node)); 
   
-  n1->data = 2;           // (*n1).data = 2;
-  n1->next = NULL;        // (*n1).next = NULL;
+  temp->data = 2;           // (*n1).data = 2;
+  temp->next = NULL;        // (*n1).next = NULL;
 
-  head = n1;  
+  head = temp;  
 
-  cout<< n1->data<< " "<< n1->next;
+  cout<< temp->data<< " "<< temp->next;
  
   return 0;
 }
