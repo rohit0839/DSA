@@ -13,18 +13,19 @@ struct Queue
 void create(Queue* q, int size)
 {
   q->size = size;
-  q->front = q->rear = -1;
+  q->front = q->rear = 0;
   q->Q = new int();
 }
 
 void enqueue(Queue *q, int x)
 {
-  if(q->rear == q->size-1)
+  if(q->rear == q->size)
     cout<<"Queue is full\n";
+  
   else
   {
-    q->rear++;
     q->Q[q->rear] = x;
+    q->rear++;
   }
 }
 
@@ -33,17 +34,18 @@ int dequeue(Queue *q)
   int x = -1;
   if(q->front == q->rear)
     cout<<"Queue is empty\n";
+  
   else
   {
-    q->front++;
     x = q->Q[q->front];
+    q->front++;
   }
   return x;
 }
 
 void display(Queue q)
 {
-  for(int i=q.front+1; i<=q.rear; i++)
+  for(int i=q.front; i<q.rear; i++)
     cout<<q.Q[i]<<" ";
   cout<<"\n";
 }
