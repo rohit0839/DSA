@@ -12,7 +12,6 @@ int linearS(int arr[], int n, int x)
   return -1;
 }
 
-
 int main()
 { 
   int size,key;
